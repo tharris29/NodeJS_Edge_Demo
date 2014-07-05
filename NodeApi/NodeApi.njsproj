@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodeApi</Name>
+    <RootNamespace>NodejsApp1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3b809100-e7f9-4137-9a58-5c7fd419bec8</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>CallAssemblyMethod.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CallAssemblyMethod.js" />
+    <Compile Include="CallAssembly.js" />
+    <Compile Include="APIRouting.js" />
+    <Compile Include="InlineNetAPI.js" />
+    <Compile Include="node_modules\edge\lib\double_edge.js" />
+    <Compile Include="node_modules\edge\lib\edge.js" />
+    <Compile Include="node_modules\edge\node_modules\edge-cs\lib\edge-cs.js" />
+    <Compile Include="node_modules\edge\performance\latency.js" />
+    <Compile Include="node_modules\edge\performance\marshal_clr2v8.js" />
+    <Compile Include="node_modules\edge\samples\101_hello_lambda.js" />
+    <Compile Include="node_modules\edge\samples\102_hello_function.js" />
+    <Compile Include="node_modules\edge\samples\103_hello_file.js" />
+    <Compile Include="node_modules\edge\samples\104_add7_class.js" />
+    <Compile Include="node_modules\edge\samples\105_add7_dll.js" />
+    <Compile Include="node_modules\edge\samples\106_marshal_v82clr.js" />
+    <Compile Include="node_modules\edge\samples\107_marshal_clr2v8.js" />
+    <Compile Include="node_modules\edge\samples\108_func.js" />
+    <Compile Include="node_modules\edge\samples\108_lambda.js" />
+    <Compile Include="node_modules\edge\samples\109_sync.js" />
+    <Compile Include="node_modules\edge\samples\110_clr_instance.js" />
+    <Compile Include="node_modules\edge\samples\111_clr_listener.js" />
+    <Compile Include="node_modules\edge\samples\201_worker.js" />
+    <Compile Include="node_modules\edge\samples\202_sql.js" />
+    <Compile Include="node_modules\edge\samples\203_x509store.js" />
+    <Compile Include="node_modules\edge\samples\204_event_log.js" />
+    <Compile Include="node_modules\edge\samples\205_soap.js" />
+    <Compile Include="node_modules\edge\samples\206_registry_read.js" />
+    <Compile Include="node_modules\edge\samples\206_registry_write.js" />
+    <Compile Include="node_modules\edge\samples\207_unzip.js" />
+    <Compile Include="node_modules\edge\samples\207_zip.js" />
+    <Compile Include="node_modules\edge\samples\208_convertImage.js" />
+    <Compile Include="node_modules\edge\samples\209_websocket.js" />
+    <Compile Include="node_modules\edge\samples\210_windows_authentication.js" />
+    <Compile Include="node_modules\edge\stress\test.js" />
+    <Compile Include="node_modules\edge\test\101_edge_func.js" />
+    <Compile Include="node_modules\edge\test\102_node2net.js" />
+    <Compile Include="node_modules\edge\test\103_net2node.js" />
+    <Compile Include="node_modules\edge\test\104_csx.js" />
+    <Compile Include="node_modules\edge\test\105_node2net_sync.js" />
+    <Compile Include="node_modules\edge\test\201_patterns.js" />
+    <Compile Include="node_modules\edge\tools\checkplatform.js" />
+    <Compile Include="node_modules\edge\tools\download.js" />
+    <Compile Include="node_modules\edge\tools\install.js" />
+    <Compile Include="node_modules\edge\tools\runJsHint.js" />
+    <Compile Include="node_modules\edge\tools\test.js" />
+    <Content Include="node_modules\edge\.gitattributes" />
+    <Content Include="node_modules\edge\.jshintrc" />
+    <Content Include="node_modules\edge\.npmignore" />
+    <Content Include="node_modules\edge\binding.gyp" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.10.0\.npmignore" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.10.0\edge.node" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.10.0\msvcr120.dll" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.8.22\.npmignore" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.8.22\edge.node" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\0.8.22\msvcr120.dll" />
+    <Content Include="node_modules\edge\lib\native\win32\ia32\msvcr120.dll" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.10.0\.npmignore" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.10.0\edge.node" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.10.0\msvcr120.dll" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.8.22\.npmignore" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.8.22\edge.node" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\0.8.22\msvcr120.dll" />
+    <Content Include="node_modules\edge\lib\native\win32\x64\msvcr120.dll" />
+    <Content Include="node_modules\edge\LICENSE.txt" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\.npmignore" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\lib\edge-cs.dll" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\LICENSE.txt" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\package.json" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\README.md" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\src\edge-cs\edge-cs.csproj" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\src\edge-cs\EdgeCompiler.cs" />
+    <Content Include="node_modules\edge\node_modules\edge-cs\src\edge-cs\Properties\AssemblyInfo.cs" />
+    <Content Include="node_modules\edge\package.json" />
+    <Content Include="node_modules\edge\performance\.npmignore" />
+    <Content Include="node_modules\edge\performance\BookService\App.config" />
+    <Content Include="node_modules\edge\performance\BookService\BookService.csproj" />
+    <Content Include="node_modules\edge\performance\BookService\packages.config" />
+    <Content Include="node_modules\edge\performance\BookService\Program.cs" />
+    <Content Include="node_modules\edge\performance\BookService\Properties\AssemblyInfo.cs" />
+    <Content Include="node_modules\edge\README.md" />
+    <Content Include="node_modules\edge\samples\103_hello_file.csx" />
+    <Content Include="node_modules\edge\samples\202_sql.csx" />
+    <Content Include="node_modules\edge\samples\205_soap.csx" />
+    <Content Include="node_modules\edge\samples\edge.png" />
+    <Content Include="node_modules\edge\samples\readme.txt" />
+    <Content Include="node_modules\edge\src\common\edge_common.h" />
+    <Content Include="node_modules\edge\src\common\v8synchronizationcontext.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\clractioncontext.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\clrfunc.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\clrfuncinvokecontext.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\clrfuncreflectionwrap.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\edge.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\edge.h" />
+    <Content Include="node_modules\edge\src\dotnet\nodejsfunc.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\nodejsfuncinvokecontext.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\persistentdisposecontext.cpp" />
+    <Content Include="node_modules\edge\src\dotnet\utils.cpp" />
+    <Content Include="node_modules\edge\src\double\dotnet\EdgeJs.cs" />
+    <Content Include="node_modules\edge\src\mono\clractioncontext.cpp" />
+    <Content Include="node_modules\edge\src\mono\clrfunc.cpp" />
+    <Content Include="node_modules\edge\src\mono\clrfuncinvokecontext.cpp" />
+    <Content Include="node_modules\edge\src\mono\clrfuncinvokecontext.cs" />
+    <Content Include="node_modules\edge\src\mono\clrfuncreflectionwrap.cs" />
+    <Content Include="node_modules\edge\src\mono\dictionary.cpp" />
+    <Content Include="node_modules\edge\src\mono\edge.cpp" />
+    <Content Include="node_modules\edge\src\mono\edge.h" />
+    <Content Include="node_modules\edge\src\mono\monoembedding.cpp" />
+    <Content Include="node_modules\edge\src\mono\monoembedding.cs" />
+    <Content Include="node_modules\edge\src\mono\nodejsfunc.cpp" />
+    <Content Include="node_modules\edge\src\mono\nodejsfunc.cs" />
+    <Content Include="node_modules\edge\src\mono\nodejsfuncinvokecontext.cpp" />
+    <Content Include="node_modules\edge\src\mono\nodejsfuncinvokecontext.cs" />
+    <Content Include="node_modules\edge\src\mono\task.cpp" />
+    <Content Include="node_modules\edge\src\mono\utils.cpp" />
+    <Content Include="node_modules\edge\test\build.bat" />
+    <Content Include="node_modules\edge\test\double\.npmignore" />
+    <Content Include="node_modules\edge\test\double\double_stress\App.config" />
+    <Content Include="node_modules\edge\test\double\double_stress\double_stress.csproj" />
+    <Content Include="node_modules\edge\test\double\double_stress\packages.config" />
+    <Content Include="node_modules\edge\test\double\double_stress\Program.cs" />
+    <Content Include="node_modules\edge\test\double\double_stress\Properties\AssemblyInfo.cs" />
+    <Content Include="node_modules\edge\test\double\double_test\DoubleEdge.cs" />
+    <Content Include="node_modules\edge\test\double\double_test\double_test.csproj" />
+    <Content Include="node_modules\edge\test\double\double_test\packages.config" />
+    <Content Include="node_modules\edge\test\double\double_test\Properties\AssemblyInfo.cs" />
+    <Content Include="node_modules\edge\test\hello_class.cs" />
+    <Content Include="node_modules\edge\test\hello_class.csx" />
+    <Content Include="node_modules\edge\test\hello_lambda.csx" />
+    <Content Include="node_modules\edge\test\test.bat" />
+    <Content Include="node_modules\edge\test\testall.bat" />
+    <Content Include="node_modules\edge\test\tests.cs" />
+    <Content Include="node_modules\edge\tools\build.bat" />
+    <Content Include="node_modules\edge\tools\buildall.bat" />
+    <Content Include="node_modules\edge\tools\build_double.bat" />
+    <Content Include="node_modules\edge\tools\download.cs" />
+    <Content Include="node_modules\edge\tools\Microsoft.Portable.Common.targets" />
+    <Content Include="node_modules\edge\tools\mono64.rb" />
+    <Content Include="node_modules\edge\tools\nuget\edge.nuspec" />
+    <Content Include="node_modules\edge\tools\nuget\install.ps1" />
+    <Content Include="node_modules\edge\tools\repl.cs" />
+    <Content Include="node_modules\edge\tools\ubuntu_12.04_clean_install.sh" />
+    <Content Include="node_modules\edge\tools\unzip.cs" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="node_modules\" />
+    <Folder Include="node_modules\edge\" />
+    <Folder Include="node_modules\edge\lib\" />
+    <Folder Include="node_modules\edge\lib\native\" />
+    <Folder Include="node_modules\edge\lib\native\win32\" />
+    <Folder Include="node_modules\edge\lib\native\win32\ia32\" />
+    <Folder Include="node_modules\edge\lib\native\win32\ia32\0.10.0\" />
+    <Folder Include="node_modules\edge\lib\native\win32\ia32\0.8.22\" />
+    <Folder Include="node_modules\edge\lib\native\win32\x64\" />
+    <Folder Include="node_modules\edge\lib\native\win32\x64\0.10.0\" />
+    <Folder Include="node_modules\edge\lib\native\win32\x64\0.8.22\" />
+    <Folder Include="node_modules\edge\node_modules\" />
+    <Folder Include="node_modules\edge\node_modules\edge-cs\" />
+    <Folder Include="node_modules\edge\node_modules\edge-cs\lib\" />
+    <Folder Include="node_modules\edge\node_modules\edge-cs\src\" />
+    <Folder Include="node_modules\edge\node_modules\edge-cs\src\edge-cs\" />
+    <Folder Include="node_modules\edge\node_modules\edge-cs\src\edge-cs\Properties\" />
+    <Folder Include="node_modules\edge\performance\" />
+    <Folder Include="node_modules\edge\performance\BookService\" />
+    <Folder Include="node_modules\edge\performance\BookService\Properties\" />
+    <Folder Include="node_modules\edge\samples\" />
+    <Folder Include="node_modules\edge\src\" />
+    <Folder Include="node_modules\edge\src\common\" />
+    <Folder Include="node_modules\edge\src\dotnet\" />
+    <Folder Include="node_modules\edge\src\double\" />
+    <Folder Include="node_modules\edge\src\double\dotnet\" />
+    <Folder Include="node_modules\edge\src\mono\" />
+    <Folder Include="node_modules\edge\stress\" />
+    <Folder Include="node_modules\edge\test\" />
+    <Folder Include="node_modules\edge\test\double\" />
+    <Folder Include="node_modules\edge\test\double\double_stress\" />
+    <Folder Include="node_modules\edge\test\double\double_stress\Properties\" />
+    <Folder Include="node_modules\edge\test\double\double_test\" />
+    <Folder Include="node_modules\edge\test\double\double_test\Properties\" />
+    <Folder Include="node_modules\edge\tools\" />
+    <Folder Include="node_modules\edge\tools\nuget\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

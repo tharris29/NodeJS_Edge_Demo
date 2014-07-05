@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodeApi", "NodeApi\NodeApi.njsproj", "{3B809100-E7F9-4137-9A58-5C7FD419BEC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7870AB61-2246-4296-B39B-10823A08D72A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetService", "dotNetService\dotNetService.csproj", "{622791A2-6FF4-45FC-8ED3-5096512AEC8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B809100-E7F9-4137-9A58-5C7FD419BEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B809100-E7F9-4137-9A58-5C7FD419BEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B809100-E7F9-4137-9A58-5C7FD419BEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B809100-E7F9-4137-9A58-5C7FD419BEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622791A2-6FF4-45FC-8ED3-5096512AEC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622791A2-6FF4-45FC-8ED3-5096512AEC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622791A2-6FF4-45FC-8ED3-5096512AEC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622791A2-6FF4-45FC-8ED3-5096512AEC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

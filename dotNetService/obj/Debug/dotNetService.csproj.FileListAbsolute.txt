@@ -1,0 +1,5 @@
+C:\_Personal_Dev\NodeJsEdgeDemo\dotNetService\bin\Debug\dotNetService.dll
+C:\_Personal_Dev\NodeJsEdgeDemo\dotNetService\bin\Debug\dotNetService.pdb
+C:\_Personal_Dev\NodeJsEdgeDemo\dotNetService\obj\Debug\dotNetService.csprojResolveAssemblyReference.cache
+C:\_Personal_Dev\NodeJsEdgeDemo\dotNetService\obj\Debug\dotNetService.dll
+C:\_Personal_Dev\NodeJsEdgeDemo\dotNetService\obj\Debug\dotNetService.pdb
