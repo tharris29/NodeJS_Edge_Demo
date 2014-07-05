@@ -1,10 +1,10 @@
 {
-  "name": "NodejsApp1",
-  "version": "0.0.0",
-  "description": "NodejsApp1",
-  "main": "server.js",
-  "author": {
-    "name": "tom.harris",
-    "email": ""
-  }
+   "author" : {
+      "email" : "",
+      "name" : "tom.harris"
+   },
+   "description" : "NodejsApi",
+   "main" : "server.js",
+   "name" : "NodejsApi",
+   "version" : "0.0.0"
 }

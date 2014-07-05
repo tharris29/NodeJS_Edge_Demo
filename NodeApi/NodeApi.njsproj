@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>NodeApi</Name>
     <RootNamespace>NodejsApp1</RootNamespace>
+    <LaunchUrl>\cheese</LaunchUrl>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -13,7 +14,7 @@
     <ProjectGuid>3b809100-e7f9-4137-9a58-5c7fd419bec8</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>CallAssemblyMethod.js</StartupFile>
+    <StartupFile>InlineNetAPI.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +23,7 @@
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <ProjectView>ShowAllFiles</ProjectView>
     <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>true</StartWebBrowser>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,7 +34,6 @@
   <ItemGroup>
     <Compile Include="CallAssemblyMethod.js" />
     <Compile Include="CallAssembly.js" />
-    <Compile Include="APIRouting.js" />
     <Compile Include="InlineNetAPI.js" />
     <Compile Include="node_modules\edge\lib\double_edge.js" />
     <Compile Include="node_modules\edge\lib\edge.js" />
@@ -174,7 +174,6 @@
     <Content Include="node_modules\edge\tools\ubuntu_12.04_clean_install.sh" />
     <Content Include="node_modules\edge\tools\unzip.cs" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="node_modules\" />

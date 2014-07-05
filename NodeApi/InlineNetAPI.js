@@ -25,9 +25,11 @@ var callDotNet = edge.func(function () {/*
 
 
 http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    callDotNet('JavaScript', function (error, result) {
-        if (error) throw error;
-        res.end(JSON.stringify(result));
-    });
+    if (req.url == "/cheese") {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        callDotNet('JavaScript', function(error, result) {
+            if (error) throw error;
+            res.end(JSON.stringify(result));
+        });
+    }
 }).listen(port);

@@ -6,12 +6,7 @@ namespace dotNetService
     public class Startup
     {
         
-        public Task<object> Invoke(object input)
-        {
-            return GetCheese();
-        }
-
-        async Task<object> GetCheese()
+        public async Task<object> Invoke(object input)
         {
             var cheese = new Cheeses();
             cheese.Cheese.Add("blue cheese");

@@ -147,3 +147,5 @@ C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\node_modules\edge\performance\
 C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\node_modules\edge\test\double\double_stress\double_stress.sln
 C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\node_modules\edge\test\double\double_test\double_test.sln
 C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\bin\Microsoft.NodejsTools.WebRole.dll
+C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\CallAssemblyMethod.js
+C:\_Personal_Dev\NodeJsEdgeDemo\NodeApi\obj\Debug\InlineNetAPI.js
